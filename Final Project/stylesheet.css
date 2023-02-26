@@ -1,0 +1,433 @@
+* { box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+background-image: url(palm-trees-on-white-beach.jpg);
+background-attachment: fixed;
+background-size:cover;
+background-repeat: no-repeat;
+color: #666666;
+font-family: Georgia, sans-serif;}
+
+main{padding-left: 2em;
+padding-right: 2em;
+font-size: 1.1em;
+background-color: #FF7C35;
+background: #FF7C35 -webkit-gradient(linear, left top, left bottom, from(#FBFF35), to(#FF7C35)) no-repeat;
+background: #FF7C35 -moz-linear-gradient(top, #FBFF35, #FF7C35) no-repeat;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#FBFF35, endColorstr=#FF7C35) no-repeat;
+-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#FBFF35, endColorstr=#FBFF35)" no-repeat;
+overflow: auto;
+margin-top: 0em;}
+
+header{
+color: blue;
+font-family: Georgia, sans-serif;
+height: 120px;
+padding-left: 2em;
+padding-right: 2em;
+position: center;}
+
+header a {text-decoration: blue;}
+header a:link { color: #FFFFFF; }
+header a:visited { color: #FFFFFF; }
+header a:hover { color: yellow; }
+
+section{float: left;
+width: 33%;
+padding-left: 2em;
+padding-right: 2em;}
+
+h1{text-align: center;
+color: white;
+padding-top: .5em;
+font-size: 3em;
+letter-spacing: .25em;
+ text-shadow: 0 0 0.35em orange, 0 0 0.85em currentColor;
+ }
+ 
+li{color:black;
+margin-right: 300px:
+}
+
+ul{
+	
+}
+
+div{color:black;
+	
+}
+
+nav{
+text-align: center;
+font-size: 1.8em;
+color:cyan;
+background-color:#FBFF35;
+width:100%;
+}
+
+
+nav a{text-decoration:none;}
+
+
+nav ul{list-style-type: none;
+
+display: flex;
+flex-direction:row;
+margin:0;
+padding-left:0;
+padding-right:0;
+width:100%;
+}
+
+nav li{
+
+cursor: pointer;
+padding-top: .8em;
+padding-bottom: .8em;
+padding-right: .8em;
+padding-left: .8em;
+width: 100%;
+
+
+
+}
+
+
+
+
+h2{color: cyan;
+font-family:Georgia, serif;
+font-size: 2em;
+
+text-shadow: 0px 2px 4px blue;
+margin-right: 300px;}
+
+h3{font-family: Georgia, serif;
+font-size:1em;}
+
+h4{float:left;
+
+position: bottom;
+
+bottom:0px;
+margin-bottom: 1em;
+display:inline-block;
+text-align: bottom;
+	
+}
+
+
+
+
+dt{color: #002171;
+font-weight: bold}
+
+
+footer{background-color: #FF7C35;
+font-style: italic;
+font-size : 0.7em;
+text-align: center;
+padding: 1em;
+color:black;}
+
+#content{
+}
+#icemenu{
+background-image:url(icemenu.jpg);
+width:1000px;
+height: 600px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+#mshack{
+background-image:url(mshack.jpg);
+width:700px;
+height: 400px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+#shack{
+background-image:url(shack.jpg);
+width:550px;
+height: 600px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+float:right;
+margin-right: 100px;
+}
+
+#shackmap{
+background-image:url(shackmap.jpg);
+width:1000px;
+height: 600px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+#palmtree{background-image: url(palm-trees-on-white-beach.jpg);
+width:100%;
+height:100%;
+height: 300px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+margin-left: 170px;	
+}
+
+#wrapper{width: 80%;
+margin-right: auto;
+margin-left: auto;
+min-width:390px;
+max-width: 2048px;
+box-shadow: 3px 3px 3px 3px #777;
+ border: 16px solid rgba(0, 100, 155, .5);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */}
+	
+.neon-button {
+  font-size: 2rem;
+ z-index:10;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+  border: cyan 0.125em solid;
+  padding: 0.25em 1em;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em cyan, 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 cyan, 0 0 0.5em 0 cyan;
+
+  position: relative;
+}
+
+.neon-button::before {
+
+}
+
+.neon-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2em 0.5em cyan;
+  opacity: 0;
+  background-color: cyan;
+  z-index: -1;
+  transition: opacity 100ms linear;
+}
+
+.neon-button:hover,
+.neon-button:focus {
+  color: cyan;
+  text-shadow: none;
+}
+
+.neon-button:hover::before,
+.neon-button:focus::before {
+  opacity: 5;
+}
+.neon-button:hover::after,
+.neon-button:focus::after {
+  opacity: .2;
+}
+
+
+
+.neon-butto:hover::before,
+.neon-butto:focus::before {
+  opacity: 5;
+}
+.neon-butto:hover::after,
+.neon-butto:focus::after {
+  opacity: .2;}
+
+
+
+
+
+
+
+@media (max-width: 600px){
+	h1{font-size: 2.5em;
+	letter-spacing: .25em;
+	text-decoration: none;}
+	
+	h2{font-size: 1.5em;
+	}
+	
+	body{padding-top:0;
+	}
+	
+	nav{padding:0;
+		
+	}
+	
+	nav a{text-decoration:none;}
+
+	nav ul{display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	padding:0;
+	margin:0;
+	height:20%;
+	}
+	
+	nav li{cursor: pointer;
+	width: 12em;
+	border-bottom: none;
+	padding: 0;
+	margin:0;
+	height: 20px;
+	padding-top: .8em;
+	padding-bottom: .8em;
+	padding-right:0;
+	padding-left:0;
+	width: 100%;}
+	
+	section{padding-left: 2em;
+	padding-right: 2em;}
+	
+	#flow{display: flex;
+	flex-direction: row;}
+	
+	form{width: 60%;
+	display:grid;
+	grid-gap: 1em; gap: 1em;
+	grid-template-columns: 10em 1fr;}
+	
+	input[type="submit"] {grid-column: 2 / 3; width: 9em;}
+	
+	.neon-button {
+  font-size: 1.5rem;
+ z-index:10;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: blue;
+  border: cyan 0.125em solid;
+  padding: 0;
+  border-radius: 0.25em;
+
+  text-shadow: 0 0 0.125em cyan, 0 0 0.45em currentColor;
+
+  box-shadow: inset 0 0 0.5em 0 cyan, 0 0 0.5em 0 cyan;
+
+  position: relative;
+}
+
+#icemenu{
+background-image:url(icemenu.jpg);
+width:280px;
+height: 200px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+#mshack{
+background-image:url(mshack.jpg);
+width:240px;
+height: 180px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+#shack{
+background-image:url(shack.jpg);
+width:280px;
+height: 300px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+float:none;
+margin:0;
+margin-top:1em;
+}
+
+#shackmap{
+background-image:url(shackmap.jpg);
+width:280px;
+height: 200px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+}
+
+@media (max-width: 1024px) and (min-width: 600px){
+	
+		nav ul{display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	padding:0;
+	margin:0;
+	height:20%;
+	}
+	
+	nav li{cursor: pointer;
+	width: 12em;
+	border-bottom: none;
+	padding: 0;
+	margin:0;
+	height: 20px;
+	padding-top: .8em;
+	padding-bottom: .8em;
+	padding-right:0;
+	padding-left:0;
+	width: 100%;}
+	
+	.neon-button {
+		font-size: 1.5rem;
+	}
+
+	#icemenu{
+background-image:url(icemenu.jpg);
+width:500px;
+height: 350px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+	#mshack{
+background-image:url(mshack.jpg);
+width:450px;
+height: 300px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+
+#shack{
+background-image:url(shack.jpg);
+width:400px;
+height: 350px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+float:right;
+margin-right:0;
+margin-top;5em;
+}
+
+#shackmap{
+background-image:url(shackmap.jpg);
+width:500px;
+height: 350px;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+}
+	
+	#wrapper{margin: auto;
+	width: 80%;
+	}
+}
+
